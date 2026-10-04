@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@earendil-works/pi-coding-agent": ["C:/Users/serge/AppData/Roaming/npm/node_modules/@earendil-works/pi-coding-agent/dist/index.d.ts"],
+      "@earendil-works/pi-coding-agent/extensions": ["C:/Users/serge/AppData/Roaming/npm/node_modules/@earendil-works/pi-coding-agent/dist/extensions/index.d.ts"],
+      "@earendil-works/pi-coding-agent/*": ["C:/Users/serge/AppData/Roaming/npm/node_modules/@earendil-works/pi-coding-agent/dist/*"],
+      "@earendil-works/pi-ai": ["C:/Users/serge/AppData/Roaming/npm/node_modules/@earendil-works/pi-coding-agent/node_modules/@earendil-works/pi-ai/dist/index.d.ts"],
+      "@earendil-works/pi-ai/*": ["C:/Users/serge/AppData/Roaming/npm/node_modules/@earendil-works/pi-coding-agent/node_modules/@earendil-works/pi-ai/dist/*"],
+      "@earendil-works/pi-tui": ["C:/Users/serge/AppData/Roaming/npm/node_modules/@earendil-works/pi-coding-agent/node_modules/@earendil-works/pi-tui/dist/index.d.ts"],
+      "@earendil-works/pi-tui/*": ["C:/Users/serge/AppData/Roaming/npm/node_modules/@earendil-works/pi-coding-agent/node_modules/@earendil-works/pi-tui/dist/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "pi-local-llama-plus",
+  "version": "0.14.0-local.3",
+  "description": "Personal fork of pi-llama-cpp 0.14.0 for the local llama-server on 127.0.0.1:9931. The saved default model stays restorable even when the server is busy, loading, or temporarily down: the health probe accepts ik_llama busy state, the last known model list is cached and registered while the server is unreachable, and a background retry refreshes it. Provider id is unchanged (llama-server=<url>) so existing settings keep working.",
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "llama-cpp",
+    "local"
+  ],
+  "author": "sbsamarski (fork of pi-llama-cpp by Gabriel Sanhueza)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbsamarski/pi-local-llama-plus.git"
+  },
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2"
+  }
+}
